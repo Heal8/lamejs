@@ -14,6 +14,8 @@ var new_int = common.new_int;
 var new_int_n = common.new_int_n;
 var assert = common.assert;
 
+var MPEGMode = require('./MPEGMode.js');
+
 /**
  * ENCDELAY The encoder delay.
  *
@@ -109,7 +111,6 @@ Encoder.fircoef = [-0.0207887 * 5, -0.0378413 * 5,
 function Encoder() {
     var NewMDCT = require('./NewMDCT.js');
     var III_psy_ratio = require('./III_psy_ratio.js');
-    var MPEGMode = require('./MPEGMode.js');
 
     var FFTOFFSET = Encoder.FFTOFFSET;
     var MPG_MD_MS_LR = Encoder.MPG_MD_MS_LR;

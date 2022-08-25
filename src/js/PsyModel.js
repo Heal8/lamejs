@@ -157,9 +157,9 @@ var assert = common.assert;
 
 var FFT = require("./FFT.js");
 var Encoder = require("./Encoder.js");
+var MPEGMode = require('./MPEGMode.js');
 
 function PsyModel() {
-    var MPEGMode = require('./MPEGMode.js');
     var fft = new FFT();
 
     var LOG10 = 2.30258509299404568402;

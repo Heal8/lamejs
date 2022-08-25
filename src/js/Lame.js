@@ -24,9 +24,9 @@ var CBRNewIterationLoop = require('./CBRNewIterationLoop.js');
 var BitStream = require('./BitStream.js');
 var Tables = require('./Tables.js');
 var Encoder = require('./Encoder.js');
+var MPEGMode = require('./MPEGMode.js');
 
 function Lame() {
-    var MPEGMode = require('./MPEGMode.js');
     var self = this;
     var LAME_MAXALBUMART = (128 * 1024);
 
